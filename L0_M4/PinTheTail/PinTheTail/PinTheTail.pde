@@ -19,14 +19,14 @@ void setup(){
 }
 
 void draw(){
-  if(mouseX < 100 && mouseY < 100 || isVictorious){
+  if(mouseX < 20 && mouseY < 20 || isVictorious){
     background(knight);
     rect(490, 190, 50, 50);
   }
   else{
     background(255, 0,0);
   }
-  rect(0,0,100,100);
+  rect(0,0,20,20);
   
   if (mousePressed){
     sunCoords[0] = mouseX; 
